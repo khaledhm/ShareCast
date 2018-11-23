@@ -22,6 +22,11 @@
 		FA49932D218DD04F0021CFA3 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49932C218DD04F0021CFA3 /* Podcast.swift */; };
 		FA499330218E2C190021CFA3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49932F218E2C190021CFA3 /* APIService.swift */; };
 		FA8F8F422194D4CA00301EF6 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8F8F412194D4CA00301EF6 /* PodcastCell.swift */; };
+		FAC400C521A8524500756609 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC400C321A8524400756609 /* EpisodeCell.swift */; };
+		FAC400C621A8524500756609 /* EpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC400C421A8524500756609 /* EpisodeCell.xib */; };
+		FAC400CE21A87C2700756609 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC400CB21A87C2700756609 /* UIColor.swift */; };
+		FAC400CF21A87C2700756609 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC400CC21A87C2700756609 /* String.swift */; };
+		FAC400D021A87C2700756609 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC400CD21A87C2700756609 /* Data.swift */; };
 		FAFF82ED218CEB6400882A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82EC218CEB6400882A6A /* AppDelegate.swift */; };
 		FAFF82EF218CEB6400882A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFF82EE218CEB6400882A6A /* ViewController.swift */; };
 		FAFF82F2218CEB6400882A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFF82F0218CEB6400882A6A /* Main.storyboard */; };
@@ -67,15 +72,20 @@
 		FA49932C218DD04F0021CFA3 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		FA49932F218E2C190021CFA3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		FA8F8F412194D4CA00301EF6 /* PodcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
-		FAFF82E9218CEB6400882A6A /* Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Podcast.app; path = "/Users/mohammedabalkhail/Desktop/Swift/ShareCast/build/Debug-iphoneos/Podcast.app"; sourceTree = "<absolute>"; };
+		FAC400BE21A851D700756609 /* Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC400BF21A851D700756609 /* PodcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC400C021A851D700756609 /* PodcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC400C321A8524400756609 /* EpisodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		FAC400C421A8524500756609 /* EpisodeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EpisodeCell.xib; sourceTree = "<group>"; };
+		FAC400CB21A87C2700756609 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FAC400CC21A87C2700756609 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = "../../../Google Drive/Dropbox/KFUPM/181/SWE 417/Assignments/Podcast/Podcast/Podcast/Extentions/String.swift"; sourceTree = "<group>"; };
+		FAC400CD21A87C2700756609 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FAFF82EC218CEB6400882A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFF82EE218CEB6400882A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAFF82F1218CEB6400882A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFF82F6218CEB6C00882A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFF82F9218CEB6C00882A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAFF82FB218CEB6C00882A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAFF8300218CEB6D00882A6A /* PodcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PodcastTests.xctest; path = "/Users/mohammedabalkhail/Desktop/Swift/ShareCast/build/Debug-iphoneos/PodcastTests.xctest"; sourceTree = "<absolute>"; };
-		FAFF830B218CEB6D00882A6A /* PodcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PodcastUITests.xctest; path = "/Users/mohammedabalkhail/Desktop/Swift/ShareCast/build/Debug-iphoneos/PodcastUITests.xctest"; sourceTree = "<absolute>"; };
 		FAFF831D218CEC4300882A6A /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +127,9 @@
 		50420F7C21A1114E0030CDB4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FAC400CD21A87C2700756609 /* Data.swift */,
+				FAC400CC21A87C2700756609 /* String.swift */,
+				FAC400CB21A87C2700756609 /* UIColor.swift */,
 				50420F7A21A1113E0030CDB4 /* HilperExt.swift */,
 			);
 			path = Extensions;
@@ -143,6 +156,8 @@
 		FA1AEC8821940F92000B0882 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAC400C321A8524400756609 /* EpisodeCell.swift */,
+				FAC400C421A8524500756609 /* EpisodeCell.xib */,
 				FA1AEC8D219414BD000B0882 /* PodcastCell.xib */,
 				FA8F8F412194D4CA00301EF6 /* PodcastCell.swift */,
 				50420F9E21A122040030CDB4 /* RoundedWhiteButton.swift */,
@@ -188,6 +203,9 @@
 				FAFF82EB218CEB6400882A6A /* Podcast */,
 				2751A1839D3F986606B951A6 /* Pods */,
 				50B99E38725A014450D57A4E /* Frameworks */,
+				FAC400BE21A851D700756609 /* Podcast.app */,
+				FAC400BF21A851D700756609 /* PodcastTests.xctest */,
+				FAC400C021A851D700756609 /* PodcastUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,7 +247,7 @@
 			);
 			name = Podcast;
 			productName = Podcast;
-			productReference = FAFF82E9218CEB6400882A6A /* Podcast.app */;
+			productReference = FAC400BE21A851D700756609 /* Podcast.app */;
 			productType = "com.apple.product-type.application";
 		};
 		FAFF82FF218CEB6D00882A6A /* PodcastTests */ = {
@@ -247,7 +265,7 @@
 			);
 			name = PodcastTests;
 			productName = PodcastTests;
-			productReference = FAFF8300218CEB6D00882A6A /* PodcastTests.xctest */;
+			productReference = FAC400BF21A851D700756609 /* PodcastTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		FAFF830A218CEB6D00882A6A /* PodcastUITests */ = {
@@ -265,7 +283,7 @@
 			);
 			name = PodcastUITests;
 			productName = PodcastUITests;
-			productReference = FAFF830B218CEB6D00882A6A /* PodcastUITests.xctest */;
+			productReference = FAC400C021A851D700756609 /* PodcastUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -321,6 +339,7 @@
 				50420F7321A013140030CDB4 /* GoogleService-Info.plist in Resources */,
 				FA1AEC8E219414BD000B0882 /* PodcastCell.xib in Resources */,
 				FAFF82F2218CEB6400882A6A /* Main.storyboard in Resources */,
+				FAC400C621A8524500756609 /* EpisodeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +475,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC400CF21A87C2700756609 /* String.swift in Sources */,
+				FAC400C521A8524500756609 /* EpisodeCell.swift in Sources */,
 				FA49932A218DCD3E0021CFA3 /* PodcastSearchController.swift in Sources */,
 				FA499330218E2C190021CFA3 /* APIService.swift in Sources */,
 				FA397ED72195E66D00D33617 /* SearchResults.swift in Sources */,
@@ -465,9 +486,11 @@
 				50420F7921A089170030CDB4 /* SignUpViewController.swift in Sources */,
 				50420F7B21A1113E0030CDB4 /* HilperExt.swift in Sources */,
 				50420FA221A12AF30030CDB4 /* SignInViewController.swift in Sources */,
+				FAC400D021A87C2700756609 /* Data.swift in Sources */,
 				50420F7721A083F80030CDB4 /* EntryViewController.swift in Sources */,
 				FAFF82EF218CEB6400882A6A /* ViewController.swift in Sources */,
 				FA49932D218DD04F0021CFA3 /* Podcast.swift in Sources */,
+				FAC400CE21A87C2700756609 /* UIColor.swift in Sources */,
 				FAFF82ED218CEB6400882A6A /* AppDelegate.swift in Sources */,
 				FAFF831E218CEC4300882A6A /* MainTabController.swift in Sources */,
 				50420F9F21A122040030CDB4 /* RoundedWhiteButton.swift in Sources */,

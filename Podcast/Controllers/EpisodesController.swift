@@ -23,35 +23,40 @@ class EpisodesController: UITableViewController {
     }
     //MARK:- Episode
     fileprivate func fetchEpisode(){
-        
+        print("____________________________________")
         guard let feedUrl =  podcast?.feedUrl else {return}
-        //feed url might not contain secure protocol (HTTPS)
-        //which might be blocked. so we insert it
-        let secureFeedUrl = feedUrl.contains("https") ? feedUrl :
-            feedUrl.replacingOccurrences(of: "http", with: "https")
-        print("Looking for episode from feed: ", secureFeedUrl )
-
+        print("Looking for episode from feed: ", feedUrl )
         
-        guard let url = URL(string: secureFeedUrl) else {return}
+        guard let url = URL(string: feedUrl) else {return}
         let parser = FeedParser(URL: url)
+        
         
         parser.parseAsync(result: { (result) in
             print("Parsing Done:", result.isSuccess)
             switch result {
+                
             case let .rss(feed):
+                
+                let imageUrl = feed.iTunes?.iTunesImage?.attributes?.href
                 var episodes = [Episode]()
                 feed.items?.forEach({ (feedItem) in
-                    let episode = Episode(title: feedItem.title ?? "")
+                    var episode = Episode(feedItem: feedItem)
+                    
+                    if episode.imageUrl == "" {
+                        episode.imageUrl = imageUrl
+                        
+                        
+                    }
                     episodes.append(episode)
                     
                 })
                 self.episodes = episodes
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
-
+                    
                 }
                 break
-
+                
             case let .failure(error):
                 print("Feed Parse Error: ", error)
                 break
@@ -59,27 +64,31 @@ class EpisodesController: UITableViewController {
                 print("Found Feed...")
                 break
             }
-            })
+        })
         
     }
     //MARK:- UITableView
-    //MARK: Setup worl
+    //MARK: Setup work
     fileprivate func setupTableView() {
         tableView.tableFooterView = UIView() // removes table lines
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+        let nib = UINib(nibName: "EpisodeCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellId)
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return episodes.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! EpisodeCell
         let episode = episodes[indexPath.row]
-        cell.textLabel?.text = episode.title
+        cell.episode = episode
+        
         return cell
     }
     
     
-    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 134
+    }
     
     
     
