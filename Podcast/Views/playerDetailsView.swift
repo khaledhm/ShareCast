@@ -8,6 +8,7 @@
 
 import UIKit
 import AVKit
+import ACBAVPlayer
 
 
 class PlayerDetailsView: UIView {
@@ -63,6 +64,7 @@ class PlayerDetailsView: UIView {
         player.replaceCurrentItem(with: playerItem)
         player.play()
         
+        
     }
     
     let player: AVPlayer = {
@@ -101,7 +103,8 @@ class PlayerDetailsView: UIView {
     
     @IBAction func handleDismiss(_ sender: Any) {
         self.removeFromSuperview()
-        self.player.pause()
+        //self.player.pause()
+        player.stop()
     }
     
     @IBOutlet weak var episodeImageView: UIImageView!
