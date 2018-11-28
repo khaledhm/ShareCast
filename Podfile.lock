@@ -1,4 +1,5 @@
 PODS:
+  - ACBAVPlayer (2.0)
   - Alamofire (4.7.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
@@ -199,6 +200,7 @@ PODS:
     - TwitterCore (>= 3.2.0)
 
 DEPENDENCIES:
+  - ACBAVPlayer
   - Alamofire (~> 4.7)
   - FeedKit (~> 8.0)
   - Firebase/Core
@@ -207,6 +209,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ACBAVPlayer
     - Alamofire
     - Bolts
     - BoringSSL
@@ -242,6 +245,7 @@ SPEC REPOS:
     - TwitterKit
 
 SPEC CHECKSUMS:
+  ACBAVPlayer: 1886a0d4484fa2eba023a369a3cbd5c95aa0017e
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL: e10f92a27043805c01071fe815a5cd98ae8212e7
@@ -276,6 +280,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 12a19a7968a73af404e76cb032517d606e5014d8
+PODFILE CHECKSUM: 95a8ea9c609b3fca13e4331e62b190247397944c
 
 COCOAPODS: 1.5.3
